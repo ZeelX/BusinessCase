@@ -1,3 +1,4 @@
+# modify for api & token
 security:
     enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords

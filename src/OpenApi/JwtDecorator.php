@@ -1,5 +1,5 @@
 <?php
-// api/src/OpenApi/JwtDecorator.php
+//modify for api & token
 
 declare(strict_types=1);
 

@@ -1,5 +1,5 @@
 <?php
-
+//modify for api & token
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
