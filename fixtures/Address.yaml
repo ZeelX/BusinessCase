@@ -1,0 +1,9 @@
+App\Entity\Address:
+  address{1..10}:
+    numerosVoie: '<buildingNumber()>'
+    voie: '<streetName()>'
+    country: '<country()>'
+    city: '<city()>'
+    zipCode: '<postcode()>'
+    user: '@user*'
+

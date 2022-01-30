@@ -1,0 +1,66 @@
+App\Entity\Category:
+  Pcategory1:
+    title: 'Chat'
+    description: '<text(200)>'
+
+  Pcategory2:
+    title: 'Chien'
+    description: '<text(200)>'
+
+  Pcategory3:
+    title: 'Poisson'
+    description: '<text(200)>'
+
+  Pcategory4:
+    title: 'Oiseau'
+    description: '<text(200)>'
+
+  category5:
+    title: 'Alimentation Chat'
+    description: '<text(200)>'
+    parent: '@Pcategory1'
+
+  category6:
+    title: 'Alimentation Chien'
+    description: '<text(200)>'
+    parent: '@Pcategory2'
+
+  category7:
+    title: 'Alimentation Poisson'
+    description: '<text(200)>'
+    parent: '@Pcategory3'
+
+  category8:
+    title: 'Alimentation Oiseau'
+    description: '<text(200)>'
+    parent: '@Pcategory4'
+
+  category9:
+    title: 'Jouet Chat'
+    description: '<text(200)>'
+    parent: '@Pcategory1'
+
+  category10:
+    title: 'Jouet Chien'
+    description: '<text(200)>'
+    parent: '@Pcategory2'
+
+  category11:
+    title: 'Accessoire Chat'
+    description: '<text(200)>'
+    parent: '@Pcategory1'
+
+  category12:
+    title: 'Accessoire Chien'
+    description: '<text(200)>'
+    parent: '@Pcategory2'
+
+  category13:
+    title: 'Accessoire Poisson'
+    description: '<text(200)>'
+    parent: '@Pcategory3'
+
+  category14:
+    title: 'Accessoire Oiseau'
+    description: '<text(200)>'
+    parent: '@Pcategory4'

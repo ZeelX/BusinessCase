@@ -1,0 +1,10 @@
+App\Entity\Article:
+  article{1..500}:
+    title: '<word()>'
+    description: '<text(200)>'
+    price: '<numberBetween(1,250)>'
+    stock: '<numberBetween(0,25)>'
+    promo: '40%? <numberBetween(0,7)>'
+    tva: '<numberBetween(5,20)>'
+    categories: '@category*'
+    brand: '@brand*'

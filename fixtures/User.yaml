@@ -1,0 +1,14 @@
+App\Entity\User:
+  userAdmin:
+    firstName: 'admin'
+    lastName: 'leplusbeau'
+    registeredAt: '<dateTimeBetween("1980-01-01", "now")>'
+    roles: '[ROLES_ADMIN]'
+    email: 'admin@admin.fr'
+    password: 'admin'
+  user{1..10}:
+    firstName: '<firstName()>'
+    lastName: '<lastName()>'
+    registeredAt: '<dateTimeBetween("1980-01-01", "now")>'
+    email: '<email()>'
+    password: 'test'

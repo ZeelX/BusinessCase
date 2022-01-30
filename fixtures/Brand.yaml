@@ -1,0 +1,4 @@
+App\Entity\Brand:
+  brand{1..10}:
+    title: '<word()>'
+    urlLogo: 'https://upload.wikimedia.org/wikipedia/fr/f/f3/Logo_pedigree.gif'
