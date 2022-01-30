@@ -5,6 +5,7 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: ArticleRepository::class)]
 #[ApiResource(
@@ -20,12 +21,15 @@ class Article
     private $id;
 
     #[ORM\Column(type: 'string', length: 255)]
+    #[Assert\NotBlank, Assert\Length(max: 255)]
     private $title;
 
     #[ORM\Column(type: 'string', length: 255)]
+    #[Assert\NotBlank, Assert\Length(max: 255)]
     private $description;
 
     #[ORM\Column(type: 'integer')]
+    #[Assert\NotBlank]
     private $price;
 
     #[ORM\Column(type: 'integer', nullable: true)]
@@ -35,6 +39,7 @@ class Article
     private $promo;
 
     #[ORM\Column(type: 'integer')]
+    #[Assert\NotBlank]
     private $tva;
 
     #[ORM\ManyToOne(targetEntity: Category::class, inversedBy: 'articles')]
